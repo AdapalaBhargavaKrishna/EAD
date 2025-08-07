@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .login {
+            background-color: #fff;
+            padding: 2rem 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 25rem;
+            height: 28rem;
+        }
+
+        .login h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 24px;
+            color: black;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            position: relative;
+
+        }
+
+        .form label {
+            font-size: 14px;
+            color: #2e2e2e;
+        }
+
+        .form input {
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .loginbtn  {
+            padding: 10px;
+            background-color: #68ae45;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            /* margin-bottom: 25px; */
+        }
+
+        .loginbtn:hover {
+            background-color: #3faa0a;
+        }
+
+        .form .reset {
+            position: absolute;
+            cursor: pointer ;
+            background-color: #ffd1d1;
+            border-radius: 50px;
+            border: none;
+            color: red;
+            padding: 2px 5px;
+            
+            bottom: -2px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>  
+    <div class="main">
+        <div class="login">
+            <img src="https://www.cbit.ac.in/wp-content/uploads/2023/09/CBIT-LOGO.png">
+            <h1>Login</h1>
+            <div class="form">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <button class="loginbtn" onclick="displayAlert()">Login</button>
+                <p>Don't have an Account ? <a href="register.html" target="_blank">Register</a></p>
+                <button class="reset" onclick="resetData()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function displayAlert() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            if (email === '' || password === '') {
+                alert('Please fill in all fields.');
+                return;
+            }
+            if (email === 'admin' && password === 'admin') {
+                alert('Login successful!');
+            } else {
+                alert('Invalid credentials, please try again.');
+            }
+        }
+
+        function resetData() {
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+            alert('Fields have been reset.');
+        }
+    </script>
+</body>
+
+</html>
