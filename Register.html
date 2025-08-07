@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        p{
+            text-align: center;
+            color: grey;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .register {
+            background-color: #ffffff;
+            padding: 2rem 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 28rem;
+        }
+
+        .register h1 {
+            text-align: center;
+            font-size: 24px;
+            color: black;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 25px;
+
+        }
+
+        .names{
+            display: flex;
+            gap: 10px;
+        }
+
+        .form input {
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .form button {
+            padding: 10px;
+            background-color: #68ae45;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background-color: #3faa0a;
+        }
+
+        .h1style{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            gap: 10px;
+        }
+
+        hr{
+            width: 100%;
+            border: gray 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="register">
+            <img src="https://www.cbit.ac.in/wp-content/uploads/2023/09/CBIT-LOGO.png">
+            <div class="h1style">
+                <hr>
+                <h1>Register</h1>
+                <hr>
+            </div>
+            <p>Create your accout for free</p>
+            <div class="form">
+                <div class="names">
+                    <input type="text" id="firstname" placeholder="Enter your first name">
+                    <input type="text" id="lastname" placeholder="Enter your last name">
+                </div>
+                <input type="text" id="email" placeholder="Enter your email">
+                <input type="password" id="password" placeholder="Enter your password">
+                <input type="password" id="confirmpassword" placeholder="Confirm your password">
+                <button onclick="displayAlert()">Register</button>
+                <p>Already have an Account ? <a href="login.html" target="_blank">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function displayAlert() {
+            const firstName = document.getElementById('firstname').value;
+            const lastName = document.getElementById('lastname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmpassword').value;
+
+            if (firstName && lastName && email && password && confirmPassword) {
+                if (password === confirmPassword) {
+                    alert('Registration successful for ${firstName} ${lastName}');
+                } else {
+                    alert('Passwords do not match. Please try again.');
+                }
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+    </script>
+</body>
+
+</html>
