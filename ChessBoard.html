@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cell {
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+        }
+
+        .black {
+            background-color: #4d1f05;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .white {
+            background-color: #fff5df;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row {
+            display: contents;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="chessboard">
+        <div class="row">
+            <div class="cell black">♖</div>
+            <div class="cell white">♘</div>
+            <div class="cell black">♗</div>
+            <div class="cell white">♕</div>
+            <div class="cell black">♔</div>
+            <div class="cell white">♗</div>
+            <div class="cell black">♘</div>
+            <div class="cell white">♖</div>
+        </div>
+        <div class="row">
+            <div class="cell white">♙</div>
+            <div class="cell black">♙</div>
+            <div class="cell white">♙</div>
+            <div class="cell black">♙</div>
+            <div class="cell white">♙</div>
+            <div class="cell black">♙</div>
+            <div class="cell white">♙</div>
+            <div class="cell black">♙</div>
+        </div>
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="cell black">♙</div>
+            <div class="cell white">♙</div>
+            <div class="cell black">♙</div>
+            <div class="cell white">♙</div>
+            <div class="cell black">♙</div>
+            <div class="cell white">♙</div>
+            <div class="cell black">♙</div>
+            <div class="cell white">♙</div>
+        </div>
+        <div class="row">
+            <div class="cell white">♖</div>
+            <div class="cell black">♘</div>
+            <div class="cell white">♗</div>
+            <div class="cell black">♕</div>
+            <div class="cell white">♔</div>
+            <div class="cell black">♗</div>
+            <div class="cell white">♘</div>
+            <div class="cell black">♖</div>
+        </div>
+
+</body>
+
+</html>
