@@ -9,4 +9,4 @@ This is where I'll store the HTML files you create during labs.
 
 - 🔐 [Login Page](https://adapalabhargavakrishna.github.io/EAD/Login.html)
 - 📝 [Register Page](https://adapalabhargavakrishna.github.io/EAD/Register.html)
-- 📝 [Chess Board](https://adapalabhargavakrishna.github.io/EAD/ChessBoard.html)
+- ♕ [Chess Board](https://adapalabhargavakrishna.github.io/EAD/ChessBoard.html)
