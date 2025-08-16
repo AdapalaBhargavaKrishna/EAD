@@ -1,7 +1,8 @@
 # Enterprise Application Development (EAD) Lab Repository
 
 Welcome to the **Enterprise Application Development (EAD)** lab repository!  
-This is where I'll store the HTML files you create during labs.
+This is where I'll store the files I create during labs.
+(Even though I’ve already mastered Web Development, I’m still doing theme labs as part of the curriculum)
 
 ---
 
