@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .cell {
+      border: 1px solid #1c4911;
+      padding: 8px;
+      text-align: center;
+      background-color: #daffdd;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .top-left{
+      border-top-left-radius: 10px;
+    }
+
+    .top-right{
+      border-top-right-radius: 10px;
+    }
+
+    .bottom-left{
+      border-bottom-left-radius: 10px;
+    }
+
+    .bottom-right{
+      border-bottom-right-radius: 10px;
+    }
+
+    .header {
+      background-color: #1c5b20;
+      color: white;
+      font-weight: bold;
+    }
+    .lunch {
+      background-color: #daffdd;
+      font-weight: bold;
+    }
+    body {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Class Timetable</h2>
+
+  <div class="row g-0">
+    <div class="col-2 cell header top-left">Day/Time</div>
+    <div class="col cell header">I<br>9:10 - 10:10</div>
+    <div class="col cell header">II<br>10:10 - 11:10</div>
+    <div class="col cell header">III<br>11:15 - 12:15</div>
+    <div class="col-1 cell header">Lunch<br>12:15 - 1:00</div>
+    <div class="col cell header">IV<br>1:00 - 2:00</div>
+    <div class="col cell header">V<br>2:00 - 3:00</div>
+    <div class="col cell header top-right">VI<br>3:05 - 4:05</div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-2 cell">Monday</div>
+    <div class="col cell">EAD</div>
+    <div class="col cell">SE</div>
+    <div class="col cell">EAD LAB (B1) / CN LAB (B2)</div>
+    <div class="col-1 cell lunch" rowspan="6">L<br> </div>
+    <div class="col cell">EAD LAB (B1) / CN LAB (B2)</div>
+    <div class="col cell">PE-2</div>
+    <div class="col cell">CN</div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-2 cell">Tuesday</div>
+    <div class="col cell">CN</div>
+    <div class="col cell">EAD</div>
+    <div class="col cell">ML</div>
+    <div class="col-1 cell lunch" rowspan="6">U<br> </div>
+    <div class="col cell">FLAT</div>
+    <div class="col cell">ML LAB (B1) / CT LAB (B2)</div>
+    <div class="col cell">CC LAB (B1) / SPORTS (B2)</div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-2 cell">Wednesday</div>
+    <div class="col cell">PE-2</div>
+    <div class="col cell">FLAT</div>
+    <div class="col cell">ML</div>
+    <div class="col-1 cell lunch" rowspan="6">N<br> </div>
+    <div class="col cell">SE</div>
+    <div class="col cell">LIBRARY (B2)</div>
+    <div class="col cell">SPORTS (B2)</div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-2 cell">Thursday</div>
+    <div class="col cell">ML LAB (B2) / CT LAB (B1)</div>
+    <div class="col cell">ML LAB (B2) / CT LAB (B1)</div>
+    <div class="col cell">CN</div>
+    <div class="col-1 cell lunch" rowspan="6">C<br> </div>
+    <div class="col cell">EAD</div>
+    <div class="col cell">LIBRARY (B1)</div>
+    <div class="col cell">SPORTS (B1)</div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-2 cell">Friday</div>
+    <div class="col cell">SE</div>
+    <div class="col cell">ML</div>
+    <div class="col cell">FLAT</div>
+    <div class="col-1 cell lunch" rowspan="6">H<br> </div>
+    <div class="col cell">PE-2</div>
+    <div class="col cell">EAD LAB (B2) / CN LAB (B1)</div>
+    <div class="col cell">EAD LAB (B2) / CN LAB (B1)</div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-2 cell bottom-left">Saturday</div>
+    <div class="col cell bottom-right" style="flex: 1 0 0; min-height:60px;">MENTORING</div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
