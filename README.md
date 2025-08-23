@@ -13,3 +13,4 @@ This is where I'll store the files I create during labs.
 - 👑 [Chess Board](https://adapalabhargavakrishna.github.io/EAD/ChessBoard.html)
 - 🧮 [Calculator](https://adapalabhargavakrishna.github.io/EAD/Calculator.html)
 - 📅 [Time Table](https://adapalabhargavakrishna.github.io/EAD/Timetable.html)
+- ⏲ [Timer](https://timer-rosy-zeta.vercel.app/)
