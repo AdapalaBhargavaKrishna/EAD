@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: beige;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+}
+
+.timer-circle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  background: #f4f6fc;
+  border-radius: 50%;
+  padding: 2rem;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  border: 6px solid;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  flex: 1;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn.start {
+  background: #4caf50;
+}
+
+.btn.start:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+.btn.pause {
+  background: #ff9800;
+}
+
+.btn.pause:hover {
+  background: #f57c00;
+  transform: scale(1.05);
+}
+
+.btn.reset {
+  background: #e53935;
+}
+
+.btn.reset:hover {
+  background: #c62828;
+  transform: scale(1.05);
+}
