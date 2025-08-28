@@ -20,28 +20,22 @@ body {
 
 .timer-card {
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
   padding: 2.5rem;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 320px;
+  width: 410px;
 }
 
-.timer-circle {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #333;
-  background: #f4f6fc;
-  border-radius: 50%;
-  padding: 2rem;
-  width: 180px;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-bottom: 2rem;
-  border: 6px solid;
+.time-text {
+  font-weight: bold;
+  font-size: 70px;
+  margin-bottom: 17px;
 }
 
 .btn-group {
