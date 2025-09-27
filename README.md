@@ -14,3 +14,4 @@ This is where I'll store the files I create during labs.
 - 🧮 [Calculator](https://adapalabhargavakrishna.github.io/EAD/Calculator.html)
 - 📅 [Time Table](https://adapalabhargavakrishna.github.io/EAD/Timetable.html)
 - ⏲ [Timer](https://timer-rosy-zeta.vercel.app/)
+- 🔐 [Password Strength Checker](https://gregarious-axolotl-c34b00.netlify.app/)
