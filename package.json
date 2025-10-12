@@ -1,0 +1,26 @@
+{
+  "name": "ead",
+  "version": "1.0.0",
+  "description": "Welcome to the **Enterprise Application Development (EAD)** lab repository!  \r This is where I'll store the files I create during labs.\r (Even though I’ve already mastered Web Development, I’m still doing these labs as part of the curriculum as I'm a humble guy)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdapalaBhargavaKrishna/EAD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AdapalaBhargavaKrishna/EAD/issues"
+  },
+  "homepage": "https://github.com/AdapalaBhargavaKrishna/EAD#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
