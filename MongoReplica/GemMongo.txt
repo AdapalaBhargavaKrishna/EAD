@@ -1,0 +1,50 @@
+Terminal-1
+& mongod --replSet m101 --logpath \data\rs1\1.log --dbpath \data\rs1 --port 27020
+
+Terminal-2
+& mongod --replSet m101 --logpath \data\rs2\2.log --dbpath \data\rs2 --port 27021
+
+Terminal-3
+& mongod --replSet m101 --logpath \data\rs3\3.log --dbpath \data\rs3 --port 27022
+
+Terminal-4
+
+mongosh --port 27020
+
+rs.initiate(
+  {
+    _id: "m101",
+    members: [
+      { _id: 0, host: "localhost:27020" },
+      { _id: 1, host: "localhost:27021" },
+      { _id: 2, host: "localhost:27022" }
+    ]
+  }
+)
+
+rs.status();
+
+use cbit
+db.createCollection("student")
+db.student.insertOne({
+  name: "Alice",
+  email: "alice@example.com",
+  createdAt: new Date()
+})
+db.student.find()
+
+
+Terminal--2
+
+mongosh --port 27021
+rs.secondaryOk()
+use cbit
+db.student.find()
+
+
+Terminal--3
+
+mongosh --port 27022
+rs.secondaryOk()
+use cbit
+db.student.find()
